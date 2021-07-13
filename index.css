@@ -185,7 +185,6 @@ body {
 
     .about-me {
         text-align: center;
-        width: fit-content;
         margin: 1em;
         display: flex;
         flex-direction: column-reverse;
@@ -228,8 +227,7 @@ body {
         margin-left: 2em;
     }
     .about-me > .image-container > img{
-        max-width: 35vw;
-        min-width: 300px;
+        max-width: 80%;
         margin-bottom: 1em;
         height: auto;
     }
