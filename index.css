@@ -5,6 +5,13 @@
     padding: 0;
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -175,14 +182,13 @@ body {
 
 
 @media screen and (max-width: 600px) {
+
     .about-me {
         text-align: center;
-        margin-left: 5em;
-        margin-right: 5em;
         width: fit-content;
+        margin: 1em;
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
         align-items: center;
         margin-top: 5em;
     }
