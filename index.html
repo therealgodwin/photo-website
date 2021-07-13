@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <section class="navbar">
+                <h1 class="title">Godwin Laureto</h1>
+    
+                <div class="links">
+                    <a href="">Home</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#about-me">About Me</a>
+                </div>
+            </section>
+            
+           <main class="content">
+               <h1>Want cute and professional grade pictures of your pet?</h1>
+    
+               <a class="contact-me-btn" href="#contact">Say Hi</a>
+           </main>
+        </div>
+        
+
+       <div class="gallery">
+        <h1 class="photo-gallery-title">Here's my photo gallery!</h1>
+        <div class="photo-grid" id="gallery">
+           
+            <div class="card" style="background-image: url('assets/dog1.jpg');">
+    
+            </div>
+            <div class="card" style="background-image: url('assets/dog2.jpg');">
+              
+            </div>
+            <div class="card" style="background-image: url('assets/dog3.jpg');">
+                
+            </div>
+            <div class="card" style="background-image: url('assets/dog4.jpg');">
+                
+            </div>
+            <div class="card" style="background-image: url('assets/dog5.jpg');">
+                
+            </div>
+            <div class="card" style="background-image: url('assets/dog6.jpg');">
+                
+            </div>
+            <div class="card" style="background-image: url('assets/dog6.jpg');">
+                
+            </div>
+            <div class="card" style="background-image: url('assets/dog6.jpg');">
+                
+            </div>
+            <div class="card" style="background-image: url('assets/dog6.jpg');">
+                
+            </div>
+           </div>
+       </div>
+
+       <section class="about-me" id="about-me">
+            <div class="text-container">
+                <h1>Who am I?</h1>
+
+                <p>I am Godwin Laureto, a wildlife photographer based in the Philippines. My passions are photography and sightseeing, also I love taking care of animals. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit recusandae esse repellat labore, pariatur ad explicabo nam natus nesciunt ea. Aperiam libero iste, natus similique eligendi quod commodi dolor rerum quisquam distinctio maiores doloribus, ipsam, itaque minima quam. Neque, facere officia. Eum vel veritatis, modi amet voluptas esse odit impedit.</p>
+            
+            </div>  
+
+            <div class="image-container">
+                <img src="assets/man-holding-dslr-camera.jpg" alt="">
+            </div>
+         
+
+        </section>
+
+       <div id="contact">
+           <h1>Contact Me</h1>
+
+           <form action="" id="form">
+               <input type="text" name="firstName" id="firstName" placeholder="First Name" required> <br>
+               <input type="text" name="lastName" id="lastName" placeholder="Last Name" required> <br>
+
+               <textarea name="firstName" id="textarea" cols="20" rows="10" placeholder="Send me your thoughts, inquiries, or a coffee!"></textarea> <br>
+                <button class="send-button" type="submit">Send Now</button>
+            </form>
+        </div>
+
+        <footer>
+            <style>.heart{color:#e25555; font-size: 30px;}</style>
+            <h1>This site is made with<span class="heart"> ♥ </span> by Godwin Laureto</h1>
+            <p>All rights reserved.</p>
+            
+        </footer>
+       
+       
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#form").submit(function(e) {
+                e.preventDefault();
+
+                $(this).find("#firstName").val('');
+                $(this).find("#lastName").val('');
+                $(this).find("#textarea").val('');
+            })
+        })
+    </script>
+</body>
+</html>
